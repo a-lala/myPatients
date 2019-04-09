@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationsFragment">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="0.5"
+            android:text="اشعارات"
+            android:textSize="25dp"/>
+        <Button
+            android:layout_gravity="center_vertical|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفويض السكرتيرة"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+<LinearLayout
+    android:id="@+id/list"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+    <!--<com.ba.mypatient.MyCustomDate-->
+        <!--android:layoutDirection="rtl"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:date_time="2/4/2019 10:30"-->
+        <!--app:submit="true"/>-->
+    <!--<com.ba.mypatient.MyCustomDate-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:date_time="2/4/2019 11:30"-->
+        <!--app:submit="true"-->
+        <!--app:name="محمد حيدر"/>-->
+    <!--<com.ba.mypatient.MyCustomDate-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:date_time="3/4/2019 11:45"-->
+        <!--app:submit="true"-->
+        <!--app:name="حيدر أحمد"-->
+        <!--/>-->
+</LinearLayout>

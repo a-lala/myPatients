@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">طبيبك</string>
+    <string name="title_home">المواعيد</string>
+    <string name="title_dashboard">المرضى</string>
+    <string name="title_notifications">الاشعارات</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

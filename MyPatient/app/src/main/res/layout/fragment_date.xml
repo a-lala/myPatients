@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:text="مواعيد الدكتور"
+            android:layout_weight="0.8"/>
+
+<ImageButton
+    android:id="@+id/img_btn_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_gravity="center_vertical"
+    android:layoutDirection="ltr"
+    android:visibility="invisible"
+    android:background="@drawable/ic_arrow_back_black_24dp"/>
+    </LinearLayout>
+    <com.ba.mypatient.CalendarView
+        android:id="@+id/cv_fragment_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/date_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</LinearLayout>

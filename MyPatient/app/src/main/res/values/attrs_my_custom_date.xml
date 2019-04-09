@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="MyCustomDate">
+        <attr name="submit" format="boolean"/>
+        <attr name="date_time" format="string"/>
+        <attr name="name" format="string"/>
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>
