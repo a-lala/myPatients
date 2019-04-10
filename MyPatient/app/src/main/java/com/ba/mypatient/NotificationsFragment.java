@@ -4,6 +4,7 @@ package com.ba.mypatient;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -73,12 +75,12 @@ public class NotificationsFragment extends Fragment {
 //        }catch (Exception e){
 //
 //        }
-        String saveFolder = "/storage/emulated/0";
+        String saveFolder = "/storage";
         File directory = new File(saveFolder + "/myfiles");
         if (directory.mkdirs()) {
             Log.e(TAG, "writeToFile:create folder");
-            ;
         }
+
         String path_file = saveFolder + "/myfiles/" + fileName;
         File myfile = new File(path_file);
 
@@ -98,7 +100,8 @@ public class NotificationsFragment extends Fragment {
     private List<String> readFromFile(Context context, String fileName) {
 
         List<String> stringBuilder = new ArrayList<String>();
-        String saveFolder = "/storage/emulated/0";
+        String saveFolder =Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).getAbsolutePath();
+
 //        File directory = new File(saveFolder + "/myfiles");
 //        if(directory.mkdirs()){
 //            Log.e(TAG, "writeToFile:create folder" );;
@@ -121,11 +124,14 @@ public class NotificationsFragment extends Fragment {
 
                 inputStreamReader.close();
                 //ret = stringBuilder.toString();
+                Toast.makeText(context,"Done!!!",Toast.LENGTH_SHORT);
             }
         } catch (FileNotFoundException e) {
             Log.e("activity", "File not found: " + e.toString());
+            Toast.makeText(context,"caN't make it:" + e.toString(),Toast.LENGTH_SHORT);
         } catch (IOException e) {
             Log.e("activity", "Can not read file: " + e.toString());
+            Toast.makeText(context,"caN't make it:" + e.toString(),Toast.LENGTH_SHORT);
         }
 
         return stringBuilder;

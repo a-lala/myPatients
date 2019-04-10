@@ -7,7 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".PatientsListFragment">
 
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="المرضى"
+    android:textSize="20dp"
+    android:layout_margin="5dp"/>
     <com.ba.mypatient.PatientView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
