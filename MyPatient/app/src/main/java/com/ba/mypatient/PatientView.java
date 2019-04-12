@@ -176,7 +176,8 @@ public class PatientView extends MaterialCardView {
         if (fragment != null) {
             ((Activity) getContext()).getFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.fragment_container, fragment)
+                    .add(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
                     .commit();
             return true;
         }
