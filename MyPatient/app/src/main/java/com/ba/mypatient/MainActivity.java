@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        loadfragment(new DateFragment());
     }
 
     Boolean loadfragment(Fragment fragment){
